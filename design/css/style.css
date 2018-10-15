@@ -1,0 +1,356 @@
+@charset "utf-8";
+/* CSS - Каскадные Таблицы Стилей */
+/* Адрес цветовой схемы: https://colorscheme.ru/#3l11Tw0w0w0w0 */
+
+
+/* HEX коды */
+.primary-0 {
+	color: #03899c;
+}		/* Основной Цвет */
+.primary-1 {
+	color: #1f6b75;
+}
+.primary-2 {
+	color: #015965;
+}
+.primary-3 {
+	color: #36bbce;
+}
+.primary-4 {
+	color: #5fc0ce;
+}
+/*Начало страницы*/
+body {
+	font: .7em/150% verdana, sans-serif;
+	background: #ececec;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 320px) {
+body {
+	background-color: rgba(255,255,255,1.00);
+}
+header {
+	min-height: 5em !important;
+}
+header h1{
+	padding: .6em 0 .6em .3em !important;
+}
+header h2{
+	padding: 2em .5em !important;
+}
+nav {
+}
+nav ul li {
+	display: contents;
+}
+nav ul li a {
+	padding-top: .2em;
+}
+article {
+}
+.lg-5 {
+	display: contents;
+}
+.lg-6 {
+	display: contents;
+}
+footer {
+	display:  inherit;
+}
+#rbox {
+	width: auto !important;
+	margin-bottom: 0 !important;
+}
+aside button {
+	margin: .5em 32% 1em 32% !important;
+}
+}
+header {
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+	min-height: 8em;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgb(54, 187, 206) none repeat scroll 0% 0%;
+}
+header h1 {
+	float: left;
+	margin: 0;
+	font-size: 3em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 1em 0 1em 1em;
+}
+header h1 a {
+	color: white;
+	text-decoration: none;
+}
+header h2 {
+	color: white;
+	float: right;
+	margin: 0;
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: right;
+	padding: 3em 1em 3em 0;
+}
+nav {
+	width: 100%;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+nav ul {
+	margin: 0;
+	padding: 1px 0;
+	list-style-type: none;
+}
+nav ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 20%;
+}
+nav ul li a {
+	background: rgb(1, 89, 101) none repeat scroll 0% 0%;
+	color: rgb(3, 137, 156);
+	position: relative;
+	display: block;
+	margin: .1em;
+	height: auto;
+	min-height: 2em;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+nav ul li a:hover {
+	background: rgb(3, 137, 156) none repeat scroll 0% 0%;
+	color: rgb(1, 89, 101);
+	transition: color .1s ease, background-color .1s ease;
+}
+article {
+	width: 100%;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 500px;
+	background: white none repeat scroll 0% 0%;
+	color: #333;
+}
+article h1 {
+}
+article h2 {
+}
+article h3 {
+	margin: 0.5em 0 0.3em;
+	font-size: 1.3em;
+	font-weight: normal;
+	color: rgb(95, 192, 206);
+}
+article h4 {
+	margin: 0 0 0 6em;
+	font-size: 100%;
+	font-weight: bold;
+}
+article p {
+	margin: 0.25em 0;
+}
+article a {
+	background: transparent none repeat scroll 0% 0%;
+	color: rgb(3, 137, 156);
+	padding: .1em .2em;
+}
+article a:hover {
+	background: rgb(3, 137, 156) none repeat scroll 0% 0%;
+	color: rgb(95, 192, 206);
+}
+article dl dt {
+	float: left;
+	font-weight: bold;
+	color: rgb(95, 192, 206);
+}
+article dl dd {
+	margin: 1em 0 1em 6em;
+}
+article img {
+	float: left;
+	padding: 5px;
+	background: rgb(3, 137, 156) none repeat scroll 0% 0%;
+}
+article ul {
+	margin: 0 0 0 6em;
+	padding: 0;
+	list-style-type: square;
+	list-style-position: inside;
+}
+aside {
+}
+aside h1 {
+}
+aside h2 {
+}
+aside h3 {
+	clear: left;
+	margin: 0.5em 0 0.5em 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: rgb(95, 192, 206);
+}
+aside h3 span {
+	background: rgb(1, 89, 101) none repeat scroll 0% 0%;
+	display: inline-block;
+	width: .8em;
+	height: .8em;
+	margin-right: 1em;
+	border: 1px solid rgb(3, 137, 156);
+	vertical-align: middle;
+}
+aside p {
+}
+aside a {
+	float: right;
+}
+aside a:hover {
+}
+aside button {
+	border: 1px solid rgb(1, 89, 101);
+	background: rgb(95, 192, 206) none repeat scroll 0% 0%;
+	color: rgb(3, 137, 156);
+	float: right;
+	margin: .8em 0 0 0;
+	width: 40%;
+	height: 2.4em;
+}
+aside button:hover {
+	border-color: rgb(1, 89, 101);
+	background: rgb(3, 137, 156) none repeat scroll 0% 0%;
+	color: rgb(95, 192, 206);
+}
+#rbox {
+	background: rgb(1, 89, 101) none repeat scroll 0% 0%;
+	color: rgb(3, 137, 156);
+	float: left;
+	position: relative;
+	width: 20em;
+	margin: 1em 0 2em 0;
+	padding: .2em .8em .2em 3em;
+	font-size: .8em;
+}
+#rbox span {
+	background: rgb(95, 192, 206) none repeat scroll 0% 0%;
+	display: block;
+	position: absolute;
+	top: .8em;
+	left: 1em;
+	width: .8em;
+	height: .8em;
+}
+aside img {
+	float: left;
+	margin: 0 1.3em 1.3em 0;
+	background: none;
+	padding: 0;
+}
+.lg-1 {
+	width: 8.333333333333333%;
+	float: left;
+	position: relative;
+	height: auto;
+}
+.lg-2 {
+	width: 16.66666666666667%;
+	float: left;
+	position: relative;
+	height: auto;
+}
+.lg-3 {
+	width: 25%;
+	float: left;
+	position: relative;
+	height: auto;
+}
+.lg-4 {
+	width: 33.33333333333333%;
+	float: left;
+	position: relative;
+	height: auto;
+}
+.lg-5 {
+	width: 41.66666666666667%;
+	float: left;
+	position: relative;
+	height: auto;
+}
+.lg-6 {
+	width: 50%;
+	float: left;
+	position: relative;
+	height: auto;
+}
+.lg-7 {
+	width: 58.33333333333333%;
+	float: left;
+	position: relative;
+	height: auto;
+}
+.lg-8 {
+	width: 66.66666666666667%;
+	float: left;
+	position: relative;
+	height: auto;
+}
+.lg-9 {
+	width: 75%;
+	float: left;
+	position: relative;
+	height: auto;
+}
+.lg-10 {
+	width: 83.33333333333333%;
+	float: left;
+	position: relative;
+	height: auto;
+}
+.lg-11 {
+	width: 91.66666666666667%;
+	float: left;
+	position: relative;
+	height: auto;
+}
+.lg-12 {
+	width: 100%;
+	float: left;
+	position: relative;
+	height: auto;
+}
+.cleaner {
+	clear: both;
+	height: 1px;
+	margin: 0;
+}
+footer {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	background: rgb(1, 89, 101) none repeat scroll 0% 0%;
+	color: rgb(3, 137, 156);
+	border-color: rgb(95, 192, 206);
+	padding: .5em 0;
+	text-align: center;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+footer a {
+	color: rgb(3, 137, 156);
+	padding: 3px 5px;
+}
+footer a:hover {
+	background: rgb(3, 137, 156) none repeat scroll 0% 0%;
+	color: rgb(1, 89, 101);
+}
