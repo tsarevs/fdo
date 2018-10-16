@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<title>Моя вторая страница</title>
+<link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+<p>Текст 1</p>
+<p class="class1">Текст 2</p>
+<div class="class2">Текст 1</div>
+<p>Текст 2</p>
+<p class="class1 class2">Текст</p>
+<div id="id1">Текст</div>
+<p>
+<p>Это <b>содержимое</b> тега макета P </p>
+<a href="#">Текст 1</a>
+<div class="class3"> <a href="#">Текст 2</a> </div>
+<style type="text/css"> 
+    div.primer {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+	/*Определяет имя для @keyframes*/
+    animation-name: mymove;
+    animation-duration: 3s;
+	/*Определяет, когда запустится анимация*/
+	animation-delay: 2s;
+	/*казывает, будет ли анимация проигрываться в реверсе на альтернативных циклах*/
+	animation-direction: alternate;
+	/*пределяет, сколько раз анимация должна будет проигрываться*/
+	animation-iteration-count: 2;
+	/*Определяет кривую скорости для анимации*/
+	animation-timing-function: linear;
+	/*Определяет, должна ли быть видна задняя сторона элемента*/
+	backface-visibility:hidden;
+}
+@keyframes mymove {
+    from { left:0px; opacity:0; }
+    to { left:540px; opacity:1; }
+}
+</style>
+<div class="primer"></div>
+<style>
+    a{
+        cursor:pointer;
+    }
+    div#Position {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        left: 10px;
+        top: 100px;
+        position: relative;
+    }
+    div#PParent{
+        background:red;
+        width:200px;
+        height:200px;
+        float:left;
+    }
+</style>
+<div id="PParent">
+  <div id="Position"></div>
+</div>
+<style>
+    span#Display{
+        background-color: blue;
+        display: none;
+        color: white;
+    }
+</style>
+<p> <span>Первый элемент</span> <span id="Display">Второй элемент</span> <span>Третий элемент</span> </p>
+<style>
+    div#Visibility{
+        background-color: blue;
+        display: inline;
+        color:white;
+    }
+    div.PParent{
+    width:100%;
+    height:200px;
+    float:left;
+}
+</style>
+<p> </p>
+<div class="PParent">
+  <div>Див 1</div>
+  <div id="Visibility">Див 2</div>
+  <div>Див 3</div>
+</div>
+<p></p>
+<style>
+    .Z-index1{
+        z-index:10;
+        width:100px;
+        height:100px;
+        position:absolute;
+        top:20px;
+        left:20px;
+        background-color:blue;
+        border:1px solid black;
+    }
+    .Z-index2{
+        z-index:10;
+        width:100px;
+        height:100px;
+        position:absolute;
+        top:70px;
+        left:70px;
+        background-color:yellow;
+        border:1px solid black;
+    }
+</style>
+<div class="PParent">
+  <div class="Z-index1">1</div>
+  <div class="Z-index2">2</div>
+</div>
+<style>
+    div#Float{
+        background-color:red;
+        width:100px;
+        height:100px;
+        float:left;
+        position: relative;
+    }
+</style>
+<div class="PParent">
+  <div id="Float"> </div>
+</div>
+<style>
+    div#Widthheight{
+        background-color: blue;
+        width:100px;
+        height:100px;
+    }
+    div.PParent{
+    width:100%;
+    height:200px;
+    float:left;
+}
+</style>
+<div class="PParent">
+  <div id="Widthheight"></div>
+</div>
+<style>
+    div#Resize{
+        background-color: blue;
+        width:100px;
+        height:100px;
+        border:1px solid black;
+        resize:both;
+        overflow:auto;
+    }
+</style>
+<div class="PParent">
+  <div id="Resize"></div>
+</div>
+<style>
+    div#Overflow{
+        background-color: blue;
+        width:100px;
+        height:100px;
+        border:1px solid black;
+        overflow:auto;
+        position:relative;
+    }
+    div#Overflow-child{
+        background-color: yellow;
+        width:300px;
+        height:300px;
+        top:20px;
+        left:20px;
+        position:absolute;
+        border:1px solid black;
+    }
+</style>
+<div class="PParent">
+  <div id="Overflow">
+    <div id="Overflow-child"></div>
+  </div>
+</div>
+<style>
+    div#Border-width{
+        background-color: blue;
+        border-width:3px;
+        border-color:black;
+        border-style: solid;
+        width:100px;
+        height:100px;
+    }
+</style>
+<div class="PParent">
+  <div id="Border-width"></div>
+</div>
+<style>
+    div#Border-style{
+        background-color: red;
+        border-width:3px;
+        border-color:black;
+        border-style: solid;
+        width:100px;
+        height:100px;
+    }
+</style>
+<div class="PParent">
+  <div id="Border-width"></div>
+</div>
+<style>
+    div#Border-radius{
+        background-color: red;
+        border:3px solid black;
+        border-radius:10px 20px 50px 50%;
+        width:300px;
+        height:180px;
+    }
+</style>
+<div class="PParent">
+  <div id="Border-radius"></div>
+</div>
+<style>
+    ol#List-style-type{
+       list-style-type: decimal;
+    }
+</style>
+<div class="PParent">
+  <ol id="List-style-type">
+    <li>Пункт 1</li>
+    <li>Пункт 2</li>
+    <li>Пункт 3</li>
+  </ol>
+</div>
+<style>
+    ol#List-style-position{
+       list-style-type: circle;
+       list-style-position: outside;
+    }
+</style>
+<div class="PParent">
+  <ol id="List-style-position">
+    <li>Пункт 1<br>
+      Пункт 1</li>
+    <li>Пункт 2<br>
+      Пункт 2</li>
+    <li>Пункт 3<br>
+      Пункт 3</li>
+  </ol>
+</div>
+<style>
+    ol#List-style{
+       list-style: circle outside url('image.gif');
+    }
+</style>
+<div class="PParent">
+  <ol id="List-style">
+    <li>Пункт 1<br>
+      Пункт 1</li>
+    <li>Пункт 2<br>
+      Пункт 2</li>
+    <li>Пункт 3<br>
+      Пункт 3</li>
+  </ol>
+</div>
+<style>
+    table#Border-collapse{
+       border-collapse: collapse;
+       border: 1px solid black;
+    }
+     
+</style>
+<div class="PParent">
+  <table id="Border-collapse">
+    <tbody>
+      <tr>
+        <td style="border:1px solid black">1 Ячейка</td>
+        <td style="border:1px solid black">2 Ячейка</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid black">3 Ячейка</td>
+        <td style="border:1px solid black">4 Ячейка</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="PParent">
+  <div style="color: red;">Текст 1</div>
+  <div style="color: rgb(255,130,255);">Текст 2</div>
+  <div style="color: #4592f3;">Текст 3</div>
+</div>
+<div class="PParent">
+  <div id="Transition"></div>
+</div>
+<div class="ex2"></div>
+<div class="ex2"></div>
+<div class="ex2"></div>
+<div class="ex2"></div>
+<div class="ex3"></div>
+<div class="ex3"></div>
+<div class="ex3"></div>
+<div class="ex4"></div>
+<div class="ex4"></div>
+<div class="ex4"></div>
+<div class="ex4"></div>
+<div class="ex5"> <img src="../3/04.htmldir/image0.jpg"> </div>
+</body>
+</html>

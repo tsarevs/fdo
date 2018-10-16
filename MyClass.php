@@ -24,7 +24,7 @@ function __construct(){}
 
 
     // Вывод на экран списка товаров из массива
-    public function printItems(){
+        public function printItems(){
 	foreach($this->items as $itemKey => $item){
 		echo 'Товар №'.$itemKey.'<br/>';
 		foreach($item as $key => $value){
